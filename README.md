@@ -4,44 +4,37 @@ This is the responsive single-page website for the GAT4ML project. It introduces
 
 ## Requirements
 
-- Node.js 22 (see [`.mise.toml`](./.mise.toml))
-- pnpm 10.34.3 (dependencies are locked by [`pnpm-lock.yaml`](./pnpm-lock.yaml))
+- Node.js 22
+- npm (included with Node.js; dependencies are locked by [`package-lock.json`](./package-lock.json))
 
 ## Local Development
 
 Run the following commands in the project root:
 
 ```bash
-pnpm install
-pnpm dev
+npm install
+npm run dev
 ```
 
 The development server listens on port `8443` by default and is available at <http://localhost:8443>. Changes under `src/` trigger hot updates. Press `Ctrl+C` to stop the server.
-
-If pnpm is not installed globally, run the project-pinned version with npm:
-
-```bash
-npm exec --yes pnpm@10.34.3 install
-npm exec --yes pnpm@10.34.3 dev
-```
 
 ## Common Commands
 
 | Command | Purpose |
 | --- | --- |
-| `pnpm dev` | Start the local development server |
-| `pnpm build` | Build the production version into `dist/` |
-| `pnpm preview` | Preview the built website locally |
-| `pnpm format` | Format code with oxfmt |
+| `npm run dev` | Start the local development server |
+| `npm run build` | Build the production version into `dist/` |
+| `npm run preview` | Preview the built website locally |
+| `npm run format` | Format code with oxfmt |
 
 Before publishing, run:
 
 ```bash
-pnpm build
-pnpm preview
+npm run build
+npm run preview
 ```
 
-The preview server uses port `8443` by default. If the development server is still running, stop it first or specify another port with the `PORT` environment variable, for example `PORT=4173 pnpm preview`.
+The preview server uses port `8443` by default. If the development server is still running, stop it first or specify another port with the `PORT` environment variable, for example `PORT=4173 npm run preview`.
 
 ## Project Structure
 
@@ -55,7 +48,7 @@ src/
   data/         News, work packages, publications, and team data
   index.css     Global styles, fonts, and Tailwind CSS
   main.tsx      React application entry point
-public/         Favicons, images, and other static assets
+public/         images, and other static assets
 index.html      HTML page template
 vite.config.ts  Vite, React, and Tailwind CSS configuration
 ```
