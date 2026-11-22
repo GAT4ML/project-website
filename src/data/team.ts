@@ -1,45 +1,35 @@
 export type TeamMember = {
-  id: string;
   name: string;
   position: string;
   color: string;
+  image?: string;
+  homepage?: string;
 };
 
 export const teamMembers: TeamMember[] = [
   {
-    id: "01",
-    name: "Team Member 01",
-    position: "Principal Investigator",
+    name: "Prof. Dr. Patricia Lago",
+    position: "Full Professor",
     color: "from-[#d9f9df] to-[#8de7a0]",
+    image: "https://s2group.cs.vu.nl/img/people/patricia.jpeg",
+    homepage: "http://patricialago.nl/",
   },
   {
-    id: "02",
-    name: "Team Member 02",
-    position: "Software Architecture Researcher",
+    name: "Dr. Justus Bogner",
+    position: "Assistant Professor",
     color: "from-[#dcebf4] to-[#84b7d8]",
+    image: "https://s2group.cs.vu.nl/img/people/justus.jpg",
+    homepage: "https://xjreb.github.io/",
   },
   {
-    id: "03",
-    name: "Team Member 03",
-    position: "Machine Learning Researcher",
+    name: "Hiya Bhatt",
+    position: "PhD Student",
     color: "from-[#e4f9e8] to-[#63d97a]",
   },
   {
-    id: "04",
-    name: "Team Member 04",
-    position: "Sustainability Researcher",
+    name: "Aastha Pant",
+    position: "Postdoc Researcher",
     color: "from-[#d7e8f3] to-[#6ca4ca]",
-  },
-  {
-    id: "05",
-    name: "Team Member 05",
-    position: "Energy Systems Researcher",
-    color: "from-[#dff7e3] to-[#9addaa]",
-  },
-  {
-    id: "06",
-    name: "Team Member 06",
-    position: "Project Coordinator",
-    color: "from-[#e0edf5] to-[#8eb9d5]",
+    homepage: "https://aasthapant.com/",
   },
 ];
