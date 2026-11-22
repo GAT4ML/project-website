@@ -27,42 +27,46 @@ export default function AboutUsSection() {
 
         <div className="relative z-10 col-span-full w-full">
           <div className="mt-2 grid w-full gap-3 md:grid-cols-2">
-            <a
-              href="#about-us"
+            <div
               className="group relative block min-h-[230px] w-full rounded-none border border-[#1FD640] bg-[#1FD640] p-8 text-left text-[#0d3520] shadow-[0_12px_30px_rgba(31,214,64,.14)] transition hover:shadow-[0_18px_40px_rgba(31,214,64,.24)] sm:p-10"
             >
-              <span className="text-xs font-bold uppercase tracking-[0.18em]">Objective</span>
+              <span className="text-sm font-bold uppercase tracking-[0.18em]">Objective</span>
               <ul className="mt-8 max-w-lg space-y-3 text-lg font-semibold leading-7 sm:text-xl">
                 <li className="flex items-start gap-3">
                   <span className="mt-[0.65em] size-1.5 shrink-0 rounded-full bg-current" />
-                  <span>Create a practical catalog of green architectural tactics.</span>
+                  <span>Curate an extensive catalog of tactics that respect recent advances in Green AI and currently popular types of systems like LLM-based applications</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-[0.65em] size-1.5 shrink-0 rounded-full bg-current" />
-                  <span>Address environmental impact across the full ML lifecycle.</span>
+                  <span>Improve the representation of the tactic collection to make it easy to browse and select tactics according to specific requirements</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-[0.65em] size-1.5 shrink-0 rounded-full bg-current" />
-                  <span>Make tactics easy to browse, evaluate, and apply.</span>
+                  <span>Gather additional empirical evidence for the tactics regarding their quality impact, prerequisites for their acceptance in industry, and effective actionable guidance for their integration in real-world scenarios</span>
                 </li>
               </ul>
-            </a>
-            <a
-              href="#insights"
+            </div>
+            <div
               className="inline-flex min-h-[230px] w-full flex-col items-start justify-start gap-0 rounded-none border border-[#377197] bg-[#377197] p-8 text-left text-white shadow-[0_12px_30px_rgba(55,113,151,.14)] transition hover:bg-[#2f668b] hover:shadow-[0_18px_40px_rgba(55,113,151,.24)] sm:p-10"
             >
-              <span className="text-xs font-bold uppercase tracking-[0.18em] text-white/70">
+              <span className="text-sm font-bold uppercase tracking-[0.18em] text-white">
                 Impact
               </span>
-              <p className="mt-8 max-w-lg text-xl font-semibold leading-8 sm:text-2xl">
-                Reduce energy use and carbon emissions while helping researchers and companies adopt
-                effective Green AI practices.
+              <p className="mt-8 max-w-lg text-lg font-semibold leading-7 sm:text-xl">
+                This research project will substantially increase the adoption and effectiveness of
+                Green AI practices, thereby leading to societal benefits in the form of reduced
+                energy consumption and carbon emissions of ML-enabled systems. Additionally, the
+                synthesized and published design knowledge and the frequent involvement of
+                companies will educate researchers and practitioners in the Netherlands regarding
+                one of the most important technologies of the next decade (ML-enabled systems).
+                This adds to the competitive advantage of the Dutch workforce and supports
+                companies in their sustainability transitions.
               </p>
-            </a>
+            </div>
           </div>
           <div className="mt-12 grid gap-8 py-8 lg:grid-cols-[.8fr_1.2fr] lg:gap-12">
             <div>
-              <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-[#377197]">
+              <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#377197]">
                 Research areas
               </p>
               <ol className="mt-6 border-t border-[#102b29]/15">
@@ -87,7 +91,7 @@ export default function AboutUsSection() {
             </div>
 
             <div>
-              <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-[#377197]">
+              <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#377197]">
                 Funding agency
               </p>
               <div className="mt-6 grid gap-7 sm:grid-cols-[110px_1fr] sm:items-start sm:gap-8">
@@ -101,9 +105,7 @@ export default function AboutUsSection() {
                     Dutch Research Council (NWO)
                   </h3>
                   <p className="mt-4 leading-7 text-[#526a68]">
-                    This publication is part of the project GAT4ML with file number [insert file
-                    number] of the research programme [name research programme] which is (partly)
-                    financed by the{" "}
+                    This project is funded by the{" "}
                     <a
                       href="https://www.nwo.nl/en"
                       target="_blank"
@@ -112,11 +114,15 @@ export default function AboutUsSection() {
                     >
                       Dutch Research Council (NWO)
                     </a>{" "}
-                    under the grant [grant ID https://doi.org/10.61686/#####].
-                  </p>
-                  <p className="mt-4 text-sm leading-6 text-[#526a68]">
-                    Research projects automatically receive a grant ID from August 2024. More
-                    information is available from NWO.
+                    under grant ID{" "}
+                    <a
+                      href="https://doi.org/10.61686/XZSQR74294"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="font-semibold text-[#377197] underline decoration-[#377197]/35 underline-offset-4 transition-colors hover:text-[#102b29]"
+                    >
+                      10.61686/XZSQR74294
+                    </a>
                   </p>
                 </div>
               </div>

@@ -15,9 +15,8 @@ export default function NewsSection() {
               className="group border-b border-[#102b29]/20 py-7 transition-colors hover:bg-white sm:px-5 sm:py-9"
             >
               <div className="grid gap-5 md:grid-cols-[140px_minmax(220px,.8fr)_minmax(280px,1.2fr)_auto] md:items-center md:gap-8">
-                <div className="flex gap-3 font-sans text-[11px] uppercase tracking-[0.08em] text-[#526a68] md:flex-col md:gap-1">
+                <div className="flex gap-3 font-sans text-xs uppercase tracking-[0.08em] text-[#526a68] md:flex-col md:gap-1">
                   <time>{update.date}</time>
-                  <span>{update.time}</span>
                 </div>
                 <h3 className="text-xl font-semibold leading-tight tracking-[-0.03em] sm:text-2xl">
                   {update.title}

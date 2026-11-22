@@ -49,12 +49,24 @@ export default function ProgressSection() {
                 {isOpen && (
                   <div
                     id={`work-package-${workPackage.number}`}
-                    className="grid gap-3 pb-8 pl-[68px] sm:grid-cols-[140px_1fr] sm:gap-8 sm:pb-10 sm:pl-[122px]"
+                    className="pb-8 pl-[68px] sm:pb-10 sm:pl-[122px]"
                   >
-                    <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#377197]">
-                      Description
-                    </span>
-                    <p className="max-w-3xl leading-7 text-[#526a68]">{workPackage.description}</p>
+                    <div className="max-w-3xl">
+                      <p className="leading-7 text-[#526a68]">{workPackage.description}</p>
+                      <ul className="mt-6 space-y-5">
+                        {workPackage.tasks.map((task) => (
+                          <li key={task.number}>
+                            <h3 className="font-semibold text-[#102b29]">
+                              <span className="text-[#377197]">{task.number}</span>{" "}
+                              {task.title}
+                            </h3>
+                            {task.description && (
+                              <p className="mt-1 leading-7 text-[#526a68]">{task.description}</p>
+                            )}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 )}
               </article>

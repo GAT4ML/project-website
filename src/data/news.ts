@@ -1,6 +1,5 @@
 export type NewsItem = {
   date: string;
-  time: string;
   title: string;
   description: string;
   href: string;
@@ -8,35 +7,24 @@ export type NewsItem = {
 
 export const newsItems: NewsItem[] = [
   {
-    date: "24 Oct 2025",
-    time: "09:00 CET",
-    title: "GAT4ML project launches",
+    date: "05 Dec 2025",
+    title: "GAT4ML receives NWO M-2 grant",
     description:
-      "A new research initiative begins its work on practical green architectural tactics for ML-enabled systems.",
-    href: "/news/gat4ml-project-launch",
+      "The project will fund one PhD position and one three-year postdoctoral position. Its work will build a catalog of Green AI tactics, make tactics easier to browse and select, and gather evidence on their impact and industry adoption.",
+    href: "https://vu.nl/en/news/2025/justus-bogner-and-patricia-lago-win-grant-in-nwo-open-competition-m-2",
   },
   {
-    date: "12 Sep 2025",
-    time: "14:30 CET",
-    title: "Mapping the environmental impact of ML",
+    date: "24 Nov 2025",
+    title: "GAT4ML among newly funded VU research projects",
     description:
-      "The team outlines a shared research agenda spanning software architecture, machine learning, and sustainability.",
-    href: "/news/research-agenda",
+      "VU Amsterdam announces GAT4ML as one of its projects funded through NWO's Open Competition Domain Science-M programme, led by Justus Bogner and Patricia Lago.",
+    href: "https://vu.nl/en/news/2025/research-projects-open-competition-enw-m-launched",
   },
   {
-    date: "28 Jun 2025",
-    time: "11:00 CET",
-    title: "Building the green tactics catalog",
+    date: "24 Nov 2026",
+    title: "NWO awards funding to GAT4ML",
     description:
-      "Our first working session turns fragmented Green AI evidence into reusable architectural guidance.",
-    href: "/news/green-tactics-catalog",
-  },
-  {
-    date: "16 Apr 2025",
-    time: "16:00 CET",
-    title: "Research community workshop announced",
-    description:
-      "Researchers and practitioners are invited to help identify, assess, and refine tactics for lower-impact ML systems.",
-    href: "/news/community-workshop",
+      "GAT4ML, led by Justus Bogner and Patricia Lago, is among 21 innovative projects funded through NWO's Open Competition Domain Science-M programme.",
+    href: "https://www.nwo.nl/en/news/grants-for-twenty-one-innovative-research-projects-in-the-open-competition-domain-science-m-programme",
   },
 ];

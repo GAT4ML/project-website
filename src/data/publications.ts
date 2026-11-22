@@ -6,18 +6,18 @@ export type Publication = {
 
 export const publications: Publication[] = [
   {
-    date: "October 2025",
-    title: "Green Architectural Tactics for ML-Enabled Systems",
+    date: "",
+    title: "No publications yet",
     href: "/publications/green-architectural-tactics",
   },
-  {
-    date: "August 2025",
-    title: "Measuring the Environmental Impact of Machine Learning Systems",
-    href: "/publications/measuring-environmental-impact",
+    {
+    date: "",
+    title: "No publications yet",
+    href: "/publications/green-architectural-tactics",
   },
-  {
-    date: "June 2025",
-    title: "Towards More Sustainable Software Architecture for AI",
-    href: "/publications/sustainable-software-architecture",
+    {
+    date: "",
+    title: "No publications yet",
+    href: "/publications/green-architectural-tactics",
   },
 ];
