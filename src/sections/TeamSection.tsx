@@ -14,23 +14,12 @@ export default function TeamSection() {
               key={member.name}
               className="group overflow-hidden border border-[#102b29]/12 bg-white shadow-[0_10px_30px_rgba(16,43,41,.05)] transition duration-300 hover:shadow-[0_18px_40px_rgba(16,43,41,.1)]"
             >
-              <div
-                className={`relative flex aspect-square items-end overflow-hidden bg-gradient-to-br ${member.color} p-6`}
-                aria-label={member.image ? undefined : `Photo of ${member.name} coming soon`}
-                role={member.image ? undefined : "img"}
-              >
-                {member.image ? (
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="absolute inset-0 size-full object-cover"
-                  />
-                ) : (
-                  <>
-                    <div className="absolute -right-16 -top-16 size-64 rounded-full border-[38px] border-white/35" />
-                    <div className="absolute -bottom-24 left-1/2 h-[82%] w-[72%] -translate-x-1/2 rounded-t-full bg-[#102b29]/12" />
-                  </>
-                )}
+              <div className="relative aspect-square overflow-hidden">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="absolute inset-0 size-full object-cover"
+                />
               </div>
               <div className="flex min-h-[140px] flex-col p-6">
                 <h3 className="text-xl font-semibold tracking-[-0.035em]">{member.name}</h3>

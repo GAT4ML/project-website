@@ -11,7 +11,7 @@ export default function SiteFooter() {
           className="flex items-center gap-3 text-[#102b29]"
         >
           <img
-            src="/nwo-logo.png"
+            src="/logo/NWO.png"
             alt="Dutch Research Council (NWO)"
             className="w-8 object-contain"
           />

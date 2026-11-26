@@ -59,6 +59,6 @@ vite.config.ts  Vite, React, and Tailwind CSS configuration
 - News, work packages, publications, and team information are in `src/data/`; the corresponding sections render this data.
 - Site-wide layout components are in `src/components/layout/`; reusable UI components are in `src/components/ui/`.
 - Global styles and fonts are in `src/index.css`; use Tailwind CSS classes for page-level styles.
-- Static files such as images belong in `public/` and can be referenced with paths beginning with `/`, for example `/gat4ml-icon.png`.
+- Static files such as images belong in `public/` and can be referenced with paths beginning with `/`, for example `/GAT4ML.png`.
 
 The page uses the Manrope font from Google Fonts and falls back to the system sans-serif font when offline.

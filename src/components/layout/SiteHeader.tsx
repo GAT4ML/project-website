@@ -8,7 +8,7 @@ export default function SiteHeader() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-[#102b29]/8 bg-[#f8faf8]/90 backdrop-blur-xl">
       <div className="mx-auto flex h-[76px] max-w-[1240px] items-center justify-between px-5 sm:px-8">
         <a href="#" className="flex items-center gap-3" aria-label="Common Ground home">
-          <img src="/gat4ml-icon.png" alt="" className="size-11 object-contain" />
+          <img src="/logo/GAT4ML.png" alt="" className="size-11 object-contain" />
           <span className="text-[18px] font-bold tracking-[-0.03em]">GAT4ML</span>
         </a>
 

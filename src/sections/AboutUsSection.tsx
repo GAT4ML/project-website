@@ -96,7 +96,7 @@ export default function AboutUsSection() {
               </p>
               <div className="mt-6 grid gap-7 sm:grid-cols-[110px_1fr] sm:items-start sm:gap-8">
                 <img
-                  src="/nwo-logo.png"
+                  src="/logo/NWO.png"
                   alt="Dutch Research Council (NWO)"
                   className="w-24 object-contain sm:w-[110px]"
                 />
